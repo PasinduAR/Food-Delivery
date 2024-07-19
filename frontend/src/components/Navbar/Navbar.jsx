@@ -21,7 +21,7 @@ const Navbar = () => {
           <img src={assets.basket_icon} alt="" />
           <div className="dot"></div>
         </div>
-        <button>sign in</button>
+        <button className=' bg-transparent text-[16px] text-[#49557e] border-solid border-[1px]  border-[#ff6347] px-[30px] py-[10px] rounded-[50px] cursor-pointer duration-300 hover:bg-[#fff4f2]'>sign in</button>
       </div>
     </div>
   )

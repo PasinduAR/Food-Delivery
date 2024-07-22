@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <>
-      <div className="app dark:bg-slate-900 dark:text-white">
+      <div className="app dark:bg-slate-900 dark:text-white ">
         <div className=" w-[80%] m-auto">
           <Navbar />
           <Routes>
@@ -18,8 +18,8 @@ const App = () => {
             <Route path="/order" element={<PlaceOrder />} />
           </Routes>
         </div>
+       <Footer />
       </div>
-      <Footer />
     </>
   );
 };

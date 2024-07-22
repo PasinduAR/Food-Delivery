@@ -25,6 +25,7 @@ export default {
       },
       gridTemplateColumns: {
         'auto-fill-minmax': 'repeat(auto-fill, minmax(240px, 1fr))',
+        'custom': '2fr 1fr 1fr',
       },
       boxShadow: {
         'custom': '0px 0px 10px #00000015',

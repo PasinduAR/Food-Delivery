@@ -4,9 +4,9 @@ import { menu_list } from '../../assets/assets'
 
 const ExploreMenu = ({category, setCategory}) => {
   return (
-    <div className=' flex flex-col gap-[20px] dark:text-white ' id='explore-menu'>
-      <h1 className=" text-[#262626] font-medium dark:text-white ">Explore our menu</h1>
-      <p className=' max-w-[60%] text-[#808080] '>Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time</p>
+    <div className='flex flex-col gap-[20px] dark:text-white ' id='explore-menu'>
+      <h1 className="text-[32px] text-[#262626] font-medium dark:text-white ">Explore our menu</h1>
+      <p className=" text-[14px] md:text-[16px] max-w-[100%] md:max-w-[60%] text-[#747474]  ">Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time</p>
       <div className=" no-scrollbar flex justify-between items-center gap-[30px] text-center mx-[20px] my-[0px] overflow-x-scroll ">
         {menu_list.map((item, index) => {
           return (

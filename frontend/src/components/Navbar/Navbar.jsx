@@ -21,11 +21,11 @@ const Navbar = () => {
   return (
     <div className=' px-0 lg:px-[30px] py-[10px] flex justify-between items-center dark:bg-slate-900 dark:text-white '> 
       <img src={assets.logo} alt="" className=" lg:w-[150px] w-[100px]" />
-      <ul className=' hidden md:flex list-none text-[16px] gap-[15px] lg:gap-[20px] text-[#49557e] dark:text-white lg:text-[18px] '>
-        <li onClick={() =>setMenu("home") } className={`cursor-pointer ${menu==="home"?"active":""}`}>home</li>
-        <li onClick={() =>setMenu("menu") } className={`cursor-pointer ${menu==="menu"?"active":""}`}>menu</li>
-        <li onClick={() =>setMenu("mobile-app") } className={`cursor-pointer ${menu==="mobile-app"?"active":""}`}>mobile app</li>
-        <li onClick={() =>setMenu("contact-us") } className={`cursor-pointer ${menu==="contact-us"?"active":""}`}>contact us</li>
+      <ul className=' hidden md:flex list-none text-[16px] gap-[17px] lg:gap-[20px] text-[#49557e] dark:text-white lg:text-[18px] '>
+        <li onClick={() =>setMenu("home") } className={`cursor-pointer ${menu==="home"?"pb-[2px] border-b-2 border-[#49557e] ":""}`}>home</li>
+        <li onClick={() =>setMenu("menu") } className={`cursor-pointer ${menu==="menu"?"pb-[2px] border-b-2 border-[#49557e] ":""}`}>menu</li>
+        <li onClick={() =>setMenu("mobile-app") } className={`cursor-pointer ${menu==="mobile-app"?"pb-[2px] border-b-2 border-[#49557e] ":""}`}>mobile app</li>
+        <li onClick={() =>setMenu("contact-us") } className={`cursor-pointer ${menu==="contact-us"?"pb-[2px] border-b-2 border-[#49557e] ":""}`}>contact us</li>
       </ul>
       <div className="flex items-center gap-[15px] lg:gap-[40px]">
         <IoIosSearch className=' text-2xl lg:text-3xl'/>

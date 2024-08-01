@@ -1,9 +1,12 @@
 import React, { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../Context/StoreContext";
+import {  Navigate, useNavigate} from 'react-router-dom';
 
 const Cart = () => {
   const { cartItems, food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
+
+  const navigate = useNavigate();
 
   return (
     <div className="cart mt-[100px]">
@@ -47,15 +50,15 @@ const Cart = () => {
             <hr className="h-[1px] bg-[#e2e2e2] border-none my-[10px] mx-[0px] "/>
             <div className="cart-total-details flex justify-between text-[#555] ">
               <p>Delivery Fee</p>
-              <p>${2}</p>
+              <p>${getTotalCartAmount()===0?0:2}</p>
             </div>
             <hr className="h-[1px] bg-[#e2e2e2] border-none my-[10px] mx-[0px] "/>
             <div className="cart-total-details flex justify-between text-[#555] ">
               <b>Total</b>
-              <b>${getTotalCartAmount()+2}</b>
+              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
             </div>
           </div>
-          <button className="border-none text-white bg-[#ff6347] w-custom-width1 py-[12px] px-[0px] rounded-[4px] cursor-pointer ">PROCEED TO CHECKOUT</button>
+          <button onClick={() => navigate('/order')} className="border-none text-white bg-[#ff6347] w-custom-width1 py-[12px] px-[0px] rounded-[4px] cursor-pointer ">PROCEED TO CHECKOUT</button>
         </div>
         <div className="cart-promocode flex-1 md:justify-start">
           <div>

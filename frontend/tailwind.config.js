@@ -41,6 +41,10 @@ export default {
         'custom-width1': 'max(15vw,200px)',
         'custom-width2': 'max(10vw,150px)',
       },
+      maxWidth: {
+        'custom-max1': 'max(30%,500px)',
+        'custom-max2': 'max(40%,500px)',
+      },
       spacing: {
         'custom-gap1': 'max(12vw,20px)',
       },
